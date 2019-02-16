@@ -20,7 +20,7 @@ describe('E2E test', () => {
 
     it('should return correct response', (done) => {
         superagent
-            .get('http://localhost:3000')
+            .get(`http://localhost:${port}`)
             .set('Accept', 'application/json')
             .then((res) => {
                 expect(res.status).toEqual(status.OK);
