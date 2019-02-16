@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - "node"
+  - "10.8.0"
+env: 
+  global: 
+    - NODE_ENV=test
+    - PORT=4000
