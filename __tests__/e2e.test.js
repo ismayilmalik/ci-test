@@ -24,7 +24,7 @@ describe('E2E test', () => {
             .set('Accept', 'application/json')
             .then((res) => {
                 expect(res.status).toEqual(status.OK);
-                expect(res.text).toEqual(JSON.stringify({ msg: 'Hello' }));
+                expect(res.text).toEqual(JSON.stringify({ msg: 'Hello World' }));
                 done();
             });
     });
